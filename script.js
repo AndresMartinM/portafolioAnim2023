@@ -4,7 +4,7 @@ async function tarjetasm() {
     const data = await consulta.json();
     const donde = document.querySelectorAll(".tarjeta-sm");
     donde.forEach(function (t, i) {
-        donde[i].innerHTML += '<div class="tarjeta" style="background : url(https://picsum.photos/200); background-position: center top; background-repeat: no-repeat; background-size: 100% auto;"><div></div><h3>Trabajo en Madera</h3><h4>2023</h4><p></p></div>';
+        donde[i].innerHTML += '<a href="https://www.google.com" ><div class="tarjeta" style="background : url(https://picsum.photos/200); background-position: center top; background-repeat: no-repeat; background-size: 100% auto;"><div></div><h3>Trabajo en Madera</h3><h4>2023</h4><p></p></div></a>';
     });
 }
 async function tarjetamd() {

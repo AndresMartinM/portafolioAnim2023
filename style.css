@@ -10,7 +10,7 @@
 	
 	--borde : 6px;
 	--margen : 10px;
-	--altobase : 180px;
+	--altobase : 250px;
 	
 	--bs-body-font-family: 'Vollkorn', serif;
 	--bs-body-color: var(--amarillo);
@@ -59,33 +59,63 @@ main {
 	background-repeat: no-repeat;
 	background-size: 100% auto;
 	
-	box-shadow : 0px 2px 5px black;
-	
 	border-radius : var(--borde);
 	width : 100%;
 	height : 100%;
+	
+}
+.tarjeta:hover {
+	box-shadow : 0px 0px 5px var(--amarillo);
 }
 
+
 .tarjeta div{
-	padding : var(--margen);
 	bottom : 0;
 	position : absolute;
 	width : 100%;
-	height : 80%;
+	height : 0;
 	mask: linear-gradient(to top, black, transparent);
 	backdrop-filter : blur(20px);
 	border-radius : 0 0 var(--borde) var(--borde) ;
+	transition : height 0.4s;
 }
+.tarjeta:hover div{
+	height : 5rem;
+}
+
+.col-lg-6 .tarjeta-md .tarjeta div{
+	right : 0;
+	position : absolute;
+	width : 0;
+	height : 100%;
+	mask: linear-gradient(to left, black, transparent);
+	backdrop-filter : blur(20px);
+	border-radius : 0 var(--borde) var(--borde) 0 ;
+	transition : width 0.4s;
+}
+.col-lg-6 .tarjeta-md .tarjeta:hover div{
+	width : 10rem;
+}
+
+
 .tarjeta h3{
+	color : var(--cafe);
 	margin : 1rem;
-	bottom : 1rem;
+	bottom : 0rem;
 	right : 0;
 	position : absolute;
 	text-align : right;
+	opacity : 0;
+	transition : color 0.8s, bottom 0.8s, opacity 0.4s;
 	
 }
+.tarjeta:hover h3 {
+	bottom : 1rem;
+	color : var(--amarillo);
+	opacity : 100%;
+}
 .tarjeta h4{
-	color : var(--celeste);
+	color : var(--amarillo);
 	margin : 1rem;
 	bottom : 0;
 	left : 0;
@@ -102,6 +132,7 @@ main {
 
 .perfil .tarjeta {
 	height : calc(3*var(--altobase) - 2*var(--margen));
+	box-shadow : 0px 0px 0px var(--rojo) !important;
 }
 
 .tarjeta-sm , .col-lg-6 .tarjeta-md {
@@ -110,4 +141,22 @@ main {
 
 .tarjeta-lg , .col-lg-3 .tarjeta-md {
 	height : calc(2*var(--altobase));
+}
+
+@media only screen and (max-width: 960px) {
+	
+	.tarjeta div{
+		right : 0;
+		position : absolute;
+		width : 0;
+		height : 100% !important;
+		mask: linear-gradient(to left, black, transparent);
+		backdrop-filter : blur(20px);
+		border-radius : 0 var(--borde) var(--borde) 0 ;
+		transition : width 0.4s;
+	}
+	.tarjeta:hover div{
+		width : 10rem;
+	}
+	
 }
