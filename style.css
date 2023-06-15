@@ -25,12 +25,12 @@ body {
 
 h1 {
 	font-family: 'Vollkorn SC', serif;
-	font-size : 2rem;
+	font-size : 1.6rem;
 }
 
 h2 {
 	font-style: italic;
-	font-size : 1.6rem;
+	font-size : 1.4rem;
 }
 
 h3 {
@@ -57,7 +57,15 @@ main {
 	padding : var(--margen) ;
 }
 
-.tarjeta {
+.tarjeta-perfil .foto {
+	height : calc(1.5*var(--altobase));
+}
+.tarjeta-perfil .presentacion {
+	padding : 20px;
+}
+
+
+.tarjeta , .tarjeta-perfil {
 	background : var(--cafe);
 	position : relative;
 	background-position: center top;
@@ -72,8 +80,7 @@ main {
 	box-shadow : 0px 0px 5px var(--amarillo);
 }
 
-
-.tarjeta div{
+.tarjeta .sombra{
 	bottom : 0;
 	position : absolute;
 	width : 100%;
@@ -83,16 +90,15 @@ main {
 	border-radius : 0 0 var(--borde) var(--borde) ;
 	transition : height 0.4s;
 }
-.tarjeta:hover div{
+.tarjeta:hover .sombra{
 	height : 100%;
 	border-radius : var(--borde);
 }
-.tarjeta-lg .tarjeta:hover div, .col-lg-3 .tarjeta-md .tarjeta:hover div{
+.tarjeta-lg .tarjeta:hover .sombra, .col-lg-3 .tarjeta-md .tarjeta:hover .sombra{
 	height : 50%;
 }
 
-
-.col-lg-6 .tarjeta-md .tarjeta div{
+.col-lg-6 .tarjeta-md .tarjeta .sombra{
 	right : 0;
 	position : absolute;
 	width : 0;
@@ -102,10 +108,9 @@ main {
 	border-radius : 0 var(--borde) var(--borde) 0 ;
 	transition : width 0.4s;
 }
-.col-lg-6 .tarjeta-md .tarjeta:hover div{
+.col-lg-6 .tarjeta-md .tarjeta:hover .sombra{
 	width : 50%;
 }
-
 
 .tarjeta h3{
 	color : var(--cafe);
@@ -123,7 +128,7 @@ main {
 	color : var(--amarillo);
 	opacity : 100%;
 }
-.col-lg-6 .tarjeta-md .tarjeta h3{
+.col-lg-6 .tarjeta-md .tarjeta h3 , .tarjeta-lg .tarjeta h3{
 	margin-left : 50%;
 }
 
@@ -135,6 +140,14 @@ main {
 	position : absolute;
 	
 }
+
+.tarjeta-perfil {
+	height : calc(3*var(--altobase) - 2*var(--margen));
+	box-shadow : 0px 0px 0px var(--rojo) !important;
+	
+	border : 1px solid var(--amarillo);
+}
+
 .tarjeta p{
 	color : var(--cafe);
 	margin : 1rem;
@@ -152,16 +165,8 @@ main {
 	opacity : 100%;
 	
 }
-.col-lg-6 .tarjeta-md .tarjeta p{
+.col-lg-6 .tarjeta-md .tarjeta p , .tarjeta-lg .tarjeta p{
 	margin-left : 50%;
-}
-
-
-.perfil .tarjeta {
-	height : calc(3*var(--altobase) - 2*var(--margen));
-	box-shadow : 0px 0px 0px var(--rojo) !important;
-	
-	border : 1px solid var(--amarillo);
 }
 
 .tarjeta-sm , .col-lg-6 .tarjeta-md {
@@ -174,7 +179,7 @@ main {
 
 @media only screen and (max-width: 960px) {
 	
-	.tarjeta div{
+	.tarjeta .sombra{
 		right : 0;
 		position : absolute;
 		width : 0;
@@ -184,7 +189,7 @@ main {
 		border-radius : 0 var(--borde) var(--borde) 0 ;
 		transition : width 0.4s;
 	}
-	.tarjeta:hover div{
+	.tarjeta:hover .sombra{
 		width : 50%;
 	}
 	
