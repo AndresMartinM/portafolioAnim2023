@@ -2,14 +2,15 @@
 
 :root {
 	--cafe : #231e1c;
+	--cafeclaro : #302721;
 	--amarillo : #ffc771;
 	--rojo : #ff8145;
 	--azul : #00476f;
 	--celeste : #a3deff;
 	--verde : #b9ff71;
 	
-	--borde : 6px;
-	--margen : 10px;
+	--borde : 4px;
+	--margen : 4px;
 	--altobase : 250px;
 	
 	--bs-body-font-family: 'Vollkorn', serif;
@@ -17,7 +18,8 @@
 }
 
 body {
-	background : var(--cafe);
+	background: rgb(77,49,36);
+	background: linear-gradient(90deg, var(--cafeclaro) 0%, var(--cafe) 20%, var(--cafe) 80%, var(--cafeclaro) 100%);
 	
 }
 
@@ -45,7 +47,7 @@ p {
 
 main {
 	margin : auto;
-	margin-top : 20px;
+	margin-top : 60px;
 }
 
 .marco {
@@ -58,7 +60,6 @@ main {
 	background-position: center top;
 	background-repeat: no-repeat;
 	background-size: 100% auto;
-	
 	border-radius : var(--borde);
 	width : 100%;
 	height : 100%;
@@ -80,8 +81,13 @@ main {
 	transition : height 0.4s;
 }
 .tarjeta:hover div{
-	height : 5rem;
+	height : 100%;
+	border-radius : var(--borde);
 }
+.tarjeta-lg .tarjeta:hover div, .col-lg-3 .tarjeta-md .tarjeta:hover div{
+	height : 50%;
+}
+
 
 .col-lg-6 .tarjeta-md .tarjeta div{
 	right : 0;
@@ -94,7 +100,7 @@ main {
 	transition : width 0.4s;
 }
 .col-lg-6 .tarjeta-md .tarjeta:hover div{
-	width : 10rem;
+	width : 50%;
 }
 
 
@@ -133,6 +139,8 @@ main {
 .perfil .tarjeta {
 	height : calc(3*var(--altobase) - 2*var(--margen));
 	box-shadow : 0px 0px 0px var(--rojo) !important;
+	
+	border : 1px solid var(--amarillo);
 }
 
 .tarjeta-sm , .col-lg-6 .tarjeta-md {
@@ -156,7 +164,7 @@ main {
 		transition : width 0.4s;
 	}
 	.tarjeta:hover div{
-		width : 10rem;
+		width : 50%;
 	}
 	
 }
