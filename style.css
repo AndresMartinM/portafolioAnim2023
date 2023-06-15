@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Vollkorn+SC:wght@700&family=Vollkorn:ital@0;1&display=swap');
+
+:root {
+	--cafe : #231e1c;
+	--amarillo : #ffc771;
+	--rojo : #ff8145;
+	--azul : #00476f;
+	--celeste : #a3deff;
+	--verde : #b9ff71;
+	
+	--borde : 6px;
+	--margen : 10px;
+	--altobase : 180px;
+	
+	--bs-body-font-family: 'Vollkorn', serif;
+	--bs-body-color: var(--amarillo);
+}
+
+body {
+	background : var(--cafe);
+	
+}
+
+h1 {
+	font-family: 'Vollkorn SC', serif;
+}
+
+h2 {
+	font-family: 'Vollkorn SC', serif;
+}
+
+h3 {
+	font-size : 1.1rem;
+	font-family: 'Vollkorn SC', serif;
+}
+
+h4 {
+	font-style: italic;
+	font-size : 1rem;
+}
+
+p {
+	
+}
+
+main {
+	margin : auto;
+	margin-top : 20px;
+}
+
+.marco {
+	padding : var(--margen) ;
+}
+
+.tarjeta {
+	background : var(--cafe);
+	position : relative;
+	background-position: center top;
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	
+	box-shadow : 0px 2px 5px black;
+	
+	border-radius : var(--borde);
+	width : 100%;
+	height : 100%;
+}
+
+.tarjeta div{
+	padding : var(--margen);
+	bottom : 0;
+	position : absolute;
+	width : 100%;
+	height : 80%;
+	mask: linear-gradient(to top, black, transparent);
+	backdrop-filter : blur(20px);
+	border-radius : 0 0 var(--borde) var(--borde) ;
+}
+.tarjeta h3{
+	margin : 1rem;
+	bottom : 1rem;
+	right : 0;
+	position : absolute;
+	text-align : right;
+	
+}
+.tarjeta h4{
+	color : var(--celeste);
+	margin : 1rem;
+	bottom : 0;
+	left : 0;
+	position : absolute;
+	
+}
+.tarjeta p{
+	margin : 0;
+	bottom : 0;
+	position : absolute;
+	
+}
+
+
+.perfil .tarjeta {
+	height : calc(3*var(--altobase) - 2*var(--margen));
+}
+
+.tarjeta-sm , .col-lg-6 .tarjeta-md {
+	height : var(--altobase);
+}
+
+.tarjeta-lg , .col-lg-3 .tarjeta-md {
+	height : calc(2*var(--altobase));
+}
