@@ -11,7 +11,7 @@
 	
 	--borde : 4px;
 	--margen : 4px;
-	--altobase : 235px;
+	--altobase : 14rem;
 	
 	--bs-body-font-family: 'Vollkorn', serif;
 	--bs-body-color: var(--amarillo);
@@ -113,13 +113,13 @@ main {
 }
 
 .tarjeta h3{
-	color : var(--cafe);
+	color : var(--amarillo);
 	margin : 1rem;
 	bottom : 2rem;
 	right : 0;
 	position : absolute;
 	text-align : right;
-	opacity : 0;
+	opacity : 100%;
 	transition : color 0.8s, bottom 0.8s, opacity 0.4s;
 	
 }
@@ -149,24 +149,23 @@ main {
 }
 
 .tarjeta p{
-	color : var(--cafe);
-	margin : 1rem;
-	bottom : 0;
+	font-family: 'Vollkorn', serif;
+	color : var(--amarillo);
+	margin : 0;
+	top : 0;
 	right : 0;
 	position : absolute;
 	text-align : right;
 	opacity : 0;
-	transition : color 0.8s, bottom 1s, opacity 0.4s;
+	transition : color 0.8s, top 0.4s, opacity 0.4s;
 	
 }
 .tarjeta:hover p{
-	bottom : 4.6rem;
+	transition-delay : 0.4s;
+	top : 2.6rem;
 	color : var(--amarillo);
 	opacity : 100%;
 	
-}
-.col-lg-6 .tarjeta-md .tarjeta p , .tarjeta-lg .tarjeta p{
-	margin-left : 50%;
 }
 
 .tarjeta-sm , .col-lg-6 .tarjeta-md {
