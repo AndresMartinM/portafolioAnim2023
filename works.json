@@ -28,5 +28,45 @@
     "img/2/1.jpg",
     "img/2/2.jpg"
   ]
+},
+{
+  "title": "Proyectos Electrónicos",
+  "year": "2022-2023",
+  "text": "Siempre me ha interesado la electrónica e informática, y en el año 2022 tuve la oportunidad de desarrollar junto a Valentina Quilodrán un instrumento digital usando el adafruit circuit playground. Actualmente continuo con proyectos de electrónica usando arduino, para ellos combino la impresión 3d, la ebanistería y la electrónica.",
+  "image": [
+    "https://picsum.photos/600",
+    "img/1/1.jpg",
+    "img/1/2.jpg"
+  ]
+},
+{
+  "title": "Moviliario Técnico",
+  "year": "2021-2023",
+  "text": "Para poder desarrollar mis proyectos propios he necesitado fabricar mis propios espacios de trabajo. Motivado por querer revivir la experiencia que tenían los animadores de antaño construí mi escritorio de animación, y necesitado de un espacio para la carpintería fabriqué un meson de trabajo que me ayude con esta actividad.",
+  "image": [
+    "https://picsum.photos/600",
+    "img/2/1.jpg",
+    "img/2/2.jpg"
+  ]
+},
+{
+  "title": "Proyectos Electrónicos",
+  "year": "2022-2023",
+  "text": "Siempre me ha interesado la electrónica e informática, y en el año 2022 tuve la oportunidad de desarrollar junto a Valentina Quilodrán un instrumento digital usando el adafruit circuit playground. Actualmente continuo con proyectos de electrónica usando arduino, para ellos combino la impresión 3d, la ebanistería y la electrónica.",
+  "image": [
+    "https://picsum.photos/600",
+    "img/1/1.jpg",
+    "img/1/2.jpg"
+  ]
+},
+{
+  "title": "Moviliario Técnico",
+  "year": "2021-2023",
+  "text": "Para poder desarrollar mis proyectos propios he necesitado fabricar mis propios espacios de trabajo. Motivado por querer revivir la experiencia que tenían los animadores de antaño construí mi escritorio de animación, y necesitado de un espacio para la carpintería fabriqué un meson de trabajo que me ayude con esta actividad.",
+  "image": [
+    "https://picsum.photos/600",
+    "img/2/1.jpg",
+    "img/2/2.jpg"
+  ]
 }
 ]
