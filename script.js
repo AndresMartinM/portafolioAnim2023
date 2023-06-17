@@ -1,26 +1,26 @@
 
 async function tarjetasm() {
-    const consulta = await fetch("https://raw.githubusercontent.com/AndresMartinM/Clase.230601/main/worksData.json");
+    const consulta = await fetch("https://raw.githubusercontent.com/AndresMartinM/portafolioAnim2023/main/works.json");
     const data = await consulta.json();
     const donde = document.querySelectorAll(".tarjeta-sm");
     donde.forEach(function (t, i) {
-        donde[i].innerHTML += '<a href="" ><div class="tarjeta" style="background : url(https://picsum.photos/300/400); background-position: center top; background-repeat: no-repeat; background-size: 100% auto;"><div class="sombra"></div><h3>Trabajo en Madera<p>lorem ipsum texto texto texto texto texto</p></h3><h4>2023</h4></div></a>';
+        donde[i].innerHTML += '<a href="" ><div class="tarjeta" style="background : url('+ data[i+3].image[0] +'); background-repeat: no-repeat; background-size: 100% auto;"><div class="sombra"></div><h3>' + data[i+3].title + '<p>' + data[i+3].text + '</p></h3><h4>'+data[i+3].year +'</h4></div></a>';
     });
 }
 async function tarjetamd() {
-    const consulta = await fetch("https://raw.githubusercontent.com/AndresMartinM/Clase.230601/main/worksData.json");
+    const consulta = await fetch("https://raw.githubusercontent.com/AndresMartinM/portafolioAnim2023/main/works.json");
     const data = await consulta.json();
     const donde = document.querySelectorAll(".tarjeta-md");
     donde.forEach(function (t, i) {
-        donde[i].innerHTML += '<a href="" ><div class="tarjeta" style="background : url(https://picsum.photos/300/800); background-position: center top; background-repeat: no-repeat; background-size: 100% auto;"><div class="sombra"></div><h3>Trabajo en Madera<p>lorem ipsum texto texto texto texto texto</p></h3><h4>2023</h4></div></a>';
+        donde[i].innerHTML += '<a href="" ><div class="tarjeta" style="background : url('+ data[i+1].image[0] +'); background-repeat: no-repeat; background-size: 100% auto;"><div class="sombra"></div><h3>' + data[i+1].title + '<p>' + data[i+1].text + '</p></h3><h4>'+data[i+1].year +'</h4></div></a>';
     });
 }
 async function tarjetalg() {
-    const consulta = await fetch("https://raw.githubusercontent.com/AndresMartinM/Clase.230601/main/worksData.json");
+    const consulta = await fetch("https://raw.githubusercontent.com/AndresMartinM/portafolioAnim2023/main/works.json");
     const data = await consulta.json();
     const donde = document.querySelectorAll(".tarjeta-lg");
     donde.forEach(function (t, i) {
-        donde[i].innerHTML += '<a href="" ><div class="tarjeta" style="background : url(https://picsum.photos/500/600); background-position: center top; background-repeat: no-repeat; background-size: 100% auto;"><div class="sombra"></div><h3>Trabajo en Madera<p>lorem ipsum texto texto texto texto texto</p></h3><h4>2023</h4></div></a>';
+        donde[i].innerHTML += '<a href="" ><div class="tarjeta" style="background : url('+ data[i].image[0] +'); background-repeat: no-repeat; background-size: 100% auto;"><div class="sombra"></div><h3>' + data[i].title + '<p>' + data[i].text + '</p></h3><h4>'+data[i].year +'</h4></div></a>';
     });
 }
               
