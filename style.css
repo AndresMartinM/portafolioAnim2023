@@ -62,18 +62,18 @@ main {
 	left : 1rem;
 	border-radius : 1rem;
 	position : fixed;
-	text-indent: 100%;
-    white-space: nowrap;
     overflow: hidden;
+	padding : 0.25rem 0.6rem ;
+	text-align : right;
 	text-decoration : none;
-	color : var(--amarillo);
-	transition : width 0.4s;
+	color : var(--cafe);
+	transition : width 0.4s , color 0.4s;
 	z-index : 100;
 }
 .volver:hover {
-	width : 5rem;
+	width : 6rem;
 	overflow : visible;
-	text-align : right;
+	color : var(--amarillo);
 }
 .volver div {
 	color : var(--cafe);
