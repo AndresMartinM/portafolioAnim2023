@@ -53,6 +53,44 @@ main {
 	margin-top : 60px;
 }
 
+.volver {
+	background : var(--cafe);
+	border : 1px solid var(--amarillo);	
+	height : 2rem;
+	width : 2rem;
+	top : 1rem;
+	left : 1rem;
+	border-radius : 1rem;
+	position : fixed;
+	text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+	text-decoration : none;
+	color : var(--amarillo);
+	transition : width 0.4s;
+	z-index : 100;
+}
+.volver:hover {
+	width : 5rem;
+	overflow : visible;
+	text-align : right;
+}
+.volver div {
+	color : var(--cafe);
+	margin : 0;
+	position : absolute;
+	top : -1px;
+	left : -1px;
+	background : var(--amarillo);	
+	height : 2rem;
+	width : 2rem;
+	border-radius : 1rem;
+}
+.volver div svg {
+	position : absolute;
+	left : 0;
+}
+
 .marco {
 	padding : var(--margen) ;
 }
@@ -72,8 +110,10 @@ main {
 	background-size: 100% auto;
 	border-radius : var(--borde);
 	width : 100%;
-	height : 100%;
+	height : calc(3*var(--altobase) - 2*var(--margen));
+	box-shadow : 0px 0px 0px var(--rojo) !important;
 	
+	border : 1px solid var(--amarillo);	
 	
 }
 
@@ -152,13 +192,6 @@ main {
 	left : 0;
 	position : absolute;
 	
-}
-
-.tarjeta-perfil {
-	height : calc(3*var(--altobase) - 2*var(--margen));
-	box-shadow : 0px 0px 0px var(--rojo) !important;
-	
-	border : 1px solid var(--amarillo);
 }
 
 .tarjeta p{

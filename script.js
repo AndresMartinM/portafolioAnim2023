@@ -1,13 +1,14 @@
 
-var n = new URLSearchParams(window.location.search).get("nro");
-n = Number(n);
+
 
 async function articulo() {
+	var n = new URLSearchParams(window.location.search).get("nro");
+	n = Number(n);
 	const consulta = await fetch("https://raw.githubusercontent.com/AndresMartinM/portafolioAnim2023/main/works.json");
     const data = await consulta.json();
-    document.querySelector("#articulo").innerHTML = '<div class="col"><h2 class="fs-1">' + data[n].title + "</a></h2><p>" + data[n].text + "</p><small>" + data[n].year + "</small></div>";
+    document.querySelectorAll(".articulo").innerHTML = '<div class="col"><h2 class="fs-1">' + data[n].title + "</a></h2><p>" + data[n].text[0] + "</p><small>" + data[n].year + "</small></div>";
     data[n].image.forEach((x) => {
-		document.querySelector("#articulo").innerHTML += '<div class="col"><img src="' + x + '" class="w-100 rounded shadow-sm"></div>';
+		document.querySelectorAll(".articulo").innerHTML += '<div class="col"><img src="' + x + '" class="w-100 rounded shadow-sm"></div>';
     });
 }
 
@@ -36,6 +37,7 @@ async function tarjetalg() {
     });
 }
               
+articulo().catch((error) => console.error(error));
 tarjetasm().catch((error) => console.error(error));
 tarjetamd().catch((error) => console.error(error));
 tarjetalg().catch((error) => console.error(error));
