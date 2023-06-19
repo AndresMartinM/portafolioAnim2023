@@ -92,7 +92,10 @@ main {
 }
 
 .articulo {
-	padding : 0 2rem;
+	padding : var(--margen);
+}
+.articulo #texto {
+	padding : 1rem;
 }
 
 .marco {
