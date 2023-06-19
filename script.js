@@ -7,7 +7,7 @@ async function articulo() {
 	const consulta = await fetch("https://raw.githubusercontent.com/AndresMartinM/portafolioAnim2023/main/works.json");
     const data = await consulta.json();
 	console.log(data[n]);
-    document.querySelector("#texto").innerHTML = '<div><h1>' + data[n].title + '</h1><small>' + data[n].year + '</small><h2>' + data[n].text[0] + '</h2><div id="cuerpo-texto"></div></div>';
+    document.querySelector("#texto").innerHTML = '<div><small class="float-end">' + data[n].year + '</small><h1>' + data[n].title + '</h1><h2>' + data[n].text[0] + '</h2><div id="cuerpo-texto"></div></div>';
 	data[n].text.forEach((x,i) => {
 		if(i>0)document.querySelector("#cuerpo-texto").innerHTML += '<p>'+ x +'</p>';
 	});

@@ -47,6 +47,9 @@ p {
 	font-size : 1.1rem;
 	
 }
+small {
+	font-size : 0.9rem;
+}
 
 main {
 	margin : auto;
@@ -91,8 +94,13 @@ main {
 	left : 0;
 }
 
-.articulo {
-	
+.articulo small {
+	font-style: italic;
+	color : var(--cafe);
+	background : var(--amarillo);
+	height : auto;
+	padding : 0.25rem 0.6rem;
+	border-radius : 50vh;
 }
 #texto {
 	padding : 1rem;
@@ -192,7 +200,7 @@ main {
 	opacity : 100%;
 }
 .col-lg-6 .tarjeta-md .tarjeta h3 , .tarjeta-lg .tarjeta h3{
-	margin-left : 50%;
+	margin-left : calc(50% + 1rem);
 }
 
 .tarjeta h4{
@@ -255,7 +263,7 @@ footer {
 		height : var(--altobase) !important;
 	}
 	.tarjeta-sm .tarjeta h3, .tarjeta-md .tarjeta h3 , .tarjeta-lg .tarjeta h3{
-		margin-left : 50%;
+		margin-left : calc(50% + 1rem);
 	}
 	.tarjeta .sombra{
 		right : 0;
