@@ -17,6 +17,13 @@
 	--bs-body-color: var(--amarillo);
 }
 
+.cafe {color : var(--amarillo); background : var(--cafe);}
+.amarillo {color : var(--cafe); background : var(--amarillo);}
+.rojo {color : var(--cafe); background : var(--rojo);}
+.azul {color : var(--celeste); background : var(--azul);}
+.celeste {color : var(--azul); background : var(--celeste);}
+.verde {color : var(--azul); background : var(--verde);}
+
 body {
 	background: rgb(77,49,36);
 	background: linear-gradient(90deg, var(--cafeclaro) 0%, var(--cafe) 20%, var(--cafe) 80%, var(--cafeclaro) 100%);
@@ -115,10 +122,18 @@ main {
 }
 
 .tarjeta-perfil .foto {
-	height : calc(1.5*var(--altobase));
+	height : calc(2*var(--altobase));
+	background : url("img/foto.jpg");
+	position : relative;
+	background-position: center !important;
+	background-repeat: no-repeat;
+	background-size: cover !important;
+	
 }
-.tarjeta-perfil .presentacion {
+.tarjeta-perfil .foto .presentacion {
 	padding : 20px;
+	position : absolute;
+	bottom : 0;
 }
 
 .tarjeta-perfil{
@@ -133,6 +148,21 @@ main {
 	
 	border : 1px solid var(--amarillo);	
 	
+}
+.tarjeta-perfil .enlaces {
+	padding : 20px;
+	width : 100%;
+}
+.enlaces .col-6, .enlaces .col-4 {
+	padding : var(--margen);
+}
+.enlaces a {
+	display : inline-block;
+	height : 4rem;
+	padding : 1rem;
+	text-align : center;
+	width : 100%;
+	border-radius : var(--borde);
 }
 
 .tarjeta {
@@ -151,12 +181,21 @@ main {
 	
 }
 
+.tarjeta-perfil .sombra{
+	mask: linear-gradient(to top, white, transparent);
+	background : var(--cafe);
+	height : 40%;
+	width : 100%;
+	position : absolute;
+	bottom : 0;
+}
+
 .tarjeta .sombra{
 	bottom : 0;
 	position : absolute;
 	width : 100%;
 	height : 0;
-	mask: linear-gradient(to top, black, transparent);
+	mask: linear-gradient(to top, white, transparent);
 	backdrop-filter : blur(20px);
 	border-radius : 0 0 var(--borde) var(--borde) ;
 	transition : height 0.4s;
@@ -255,9 +294,6 @@ footer {
 }
 
 @media only screen and (max-width: 960px) {
-	.tarjeta-perfil {
-		display : none;
-	}
 
 	.tarjeta-sm , .tarjeta-md , .tarjeta-lg {
 		height : var(--altobase) !important;
