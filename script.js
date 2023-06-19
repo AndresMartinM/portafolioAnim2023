@@ -8,8 +8,8 @@ async function articulo() {
     const data = await consulta.json();
 	console.log(data[n]);
     document.querySelector("#texto").innerHTML = '<div><h1>' + data[n].title + '</h1><small>' + data[n].year + '</small><h2>' + data[n].text[0] + '</h2><div id="cuerpo-texto"></div></div>';
-	data[n].text.forEach((x) => {
-		document.querySelector("#cuerpo-texto").innerHTML += '<p>'+ x +'</p>'
+	data[n].text.forEach((x,i) => {
+		if(i>0)document.querySelector("#cuerpo-texto").innerHTML += '<p>'+ x +'</p>';
 	});
     data[n].image.forEach((x) => {
 		document.querySelector("#fotos").innerHTML += '<img src="' + x + '" class="w-100" >'

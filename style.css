@@ -92,10 +92,14 @@ main {
 }
 
 .articulo {
-	padding : var(--margen);
+	
 }
-.articulo #texto {
+#texto {
 	padding : 1rem;
+}
+#fotos img {
+	border-radius : var(--borde);
+	margin : var(--margen);
 }
 
 .marco {
