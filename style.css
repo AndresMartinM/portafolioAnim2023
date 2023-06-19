@@ -67,7 +67,7 @@ main {
 	text-align : right;
 	text-decoration : none;
 	color : var(--cafe);
-	transition : width 0.4s , color 0.4s;
+	transition : width 0.4s , color 0.6s;
 	z-index : 100;
 }
 .volver:hover {
@@ -91,6 +91,10 @@ main {
 	left : 0;
 }
 
+.articulo {
+	padding : 0 2rem;
+}
+
 .marco {
 	padding : var(--margen) ;
 }
@@ -111,7 +115,6 @@ main {
 	border-radius : var(--borde);
 	width : 100%;
 	height : calc(3*var(--altobase) - 2*var(--margen));
-	box-shadow : 0px 0px 0px var(--rojo) !important;
 	
 	border : 1px solid var(--amarillo);	
 	
@@ -244,7 +247,9 @@ footer {
 	.tarjeta-sm , .tarjeta-md , .tarjeta-lg {
 		height : var(--altobase) !important;
 	}
-	
+	.tarjeta-sm .tarjeta h3, .tarjeta-md .tarjeta h3 , .tarjeta-lg .tarjeta h3{
+		margin-left : 50%;
+	}
 	.tarjeta .sombra{
 		right : 0;
 		position : absolute;

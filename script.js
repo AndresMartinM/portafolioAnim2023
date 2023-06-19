@@ -6,9 +6,10 @@ async function articulo() {
 	n = Number(n);
 	const consulta = await fetch("https://raw.githubusercontent.com/AndresMartinM/portafolioAnim2023/main/works.json");
     const data = await consulta.json();
-    document.querySelectorAll(".articulo").innerHTML = '<div class="col"><h2 class="fs-1">' + data[n].title + "</a></h2><p>" + data[n].text[0] + "</p><small>" + data[n].year + "</small></div>";
+	console.log(data[n]);
+    document.querySelector("#texto").innerHTML = '<div><h1>' + data[n].title + '</h1><h2>' + data[n].text[0] + '</h2><small>' + data[n].year + '</small></div>';
     data[n].image.forEach((x) => {
-		document.querySelectorAll(".articulo").innerHTML += '<div class="col"><img src="' + x + '" class="w-100 rounded shadow-sm"></div>';
+		document.querySelector("#fotos").innerHTML += '<img src="' + x + '">';
     });
 }
 
