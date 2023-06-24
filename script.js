@@ -11,7 +11,7 @@ async function articulo() {
 		if(i>0)document.querySelector("#cuerpo-texto").innerHTML += '<p>'+ x +'</p>';
 	});
     data[n].image.forEach((x) => {
-		document.querySelector("#fotos").innerHTML += '<img src="' + x + '" class="w-100" alt="imagen del proyecto">'
+		document.querySelector("#fotos").innerHTML += '<img src="' + x + '" width="600px" class="w-100" alt="imagen del proyecto">'
     });
 }
 
