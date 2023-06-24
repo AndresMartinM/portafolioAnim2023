@@ -1,0 +1,22 @@
+{
+  "short_name": "Andrés Martin",
+  "name": "Portafolio 2023 | Andrés Martin",
+  "start_url": "/",
+  "background_color": "#231e1c",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#ffc771",
+  "description": "Weather forecast information",
+  "screenshots": [
+    {
+      "src": "/img/screenshot1.PNG",
+      "type": "image/png",
+      "sizes": "540x720"
+    },
+    {
+      "src": "/img/screenshot2.JPG",
+      "type": "image/jpg",
+      "sizes": "540x720"
+    }
+  ]
+}
