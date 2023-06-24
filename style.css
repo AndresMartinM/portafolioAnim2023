@@ -123,7 +123,7 @@ main {
 
 .tarjeta-perfil .foto {
 	height : calc(2*var(--altobase));
-	background : url("./img/foto.JPG");
+	background : url("./img/foto.jpg");
 	position : relative;
 	background-position: center !important;
 	background-repeat: no-repeat;
