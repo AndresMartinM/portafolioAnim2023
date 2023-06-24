@@ -3,6 +3,7 @@
   "title": "Miniaturas y Maquetas",
   "year": "2018",
   "text": [
+  "Roleo y tareitas de mi época escolar.",
   "Una de mis areas de investigación ha sido la de los juegos de mesa, y en 2018 incursioné en fabricar mis propias miniaturas con materiales que tenia al alcance como unos soldaditos de plástico, pasta DAS y materiales de maquetería. Ese mismo año en el colegio nos encargaron hacer una fachada en forma de retablo, hice una replica de parte de la estación Mapocho usando plumavit, pasta de muro, muchos palitos de maqueta y otros elementos para hacer detalles."
   ],
   "image": [
@@ -15,6 +16,7 @@
   "title": "Proyectos Electrónicos",
   "year": "2022-2023",
   "text": [
+  "Soldar, ensamblar e interactuar.",
   "Desde siempre me ha interesado la electrónica e informática, y en el año 2022 tuve la oportunidad de desarrollar junto a Valentina Quilodrán un instrumento digital usando el adafruit circuit playground. Actualmente continuo con proyectos de electrónica usando arduino, para ellos combino la impresión 3d, la ebanistería y la electrónica."
   ],
   "image": [
@@ -29,7 +31,7 @@
   "title": "Moviliario Técnico",
   "year": "2021-2023",
   "text": [
-  "mis muebles para el hacer",
+  "Diseño de muebles destinados al hacer y crear.",
   "Para poder desarrollar mis proyectos propios he necesitado fabricar mis propios espacios de trabajo. Motivado por querer revivir la experiencia que tenían los animadores de antaño construí mi escritorio de animación, y necesitado de un espacio para la carpintería fabriqué un meson de trabajo que me ayude con esta actividad."
   ],
   "image": [
@@ -40,9 +42,10 @@
 },
 {
   "title": "Animación y Cine",
-  "year": "2022-2023",
+  "year": "¿?-2023",
   "text": [
-  "Desde siempre me ha interesado la electrónica e informática, y en el año 2022 tuve la oportunidad de desarrollar junto a Valentina Quilodrán un instrumento digital usando el adafruit circuit playground. Actualmente continuo con proyectos de electrónica usando arduino, para ellos combino la impresión 3d, la ebanistería y la electrónica."
+  "La práctica del arte de dar vida.",
+  "Varios años atrás, en mi niñez, solía usar mi tiempo en fotografíar mis juguetes y darles vida con la animación stop-motion, de ello surgió una continuidad en mi actividad en la animación. Hasta ahora he animado usando el stop-motion, la animación tradicional a mano y en softwares, la animación computarizada en Blender y Unity orientada a mis proyectos de juegos."
   ],
   "image": [
     "img/3/0.JPG",
@@ -52,9 +55,11 @@
 },
 {
   "title": "Juegos y Videojuegos",
-  "year": "2021-2023",
+  "year": "2017-2023",
   "text": [
-  "Para poder desarrollar mis proyectos propios he necesitado fabricar mis propios espacios de trabajo. Motivado por querer revivir la experiencia que tenían los animadores de antaño construí mi escritorio de animación, y necesitado de un espacio para la carpintería fabriqué un meson de trabajo que me ayude con esta actividad."
+  "Un precioso arte interactivo que he disfrutado.",
+  "Una de mis mayores inquietudes ha sido la del diseño de videojuegos en todas sus etapas, por lo que me he propuesto muchas veces el hacer videojuegos logrando terminar un par de proyectos de menor tamaño, y teniendo un par más congelados; esto me ha permitido pasar por varios roles del desarrollo, como el diseño de producción, el arte concepto, el modelado de personajes, la programación, y claro el diseno integral del videojuego.",
+  "A partir de mi experiencia he incorporado elementos ludícos en proyectos académicos que lo ameritaban, como el juego de cartas de CODICE en el que trabajé junto a Amanda Iriarte y Jose Martín, o el juego Trouble Machine que desarrollamos Valentina Quilodrán, Amanda Iriarte, Paulina Abad, Anahí Perez y Ximena Saldivia; el primero un juego para que los niños aprendan de otros niños sus costumbres, y el segundo un juego que ayuda a la construcción y resolución de problemas, y la comrensión del mismo."
   ],
   "image": [
     "img/4/0.JPG",
@@ -66,7 +71,9 @@
   "title": "Experiencia en Materiales",
   "year": "siempre",
   "text": [
-  "Desde siempre me ha interesado la electrónica e informática, y en el año 2022 tuve la oportunidad de desarrollar junto a Valentina Quilodrán un instrumento digital usando el adafruit circuit playground. Actualmente continuo con proyectos de electrónica usando arduino, para ellos combino la impresión 3d, la ebanistería y la electrónica."
+  "La pasión de un diseñador industrial.",
+  "En mi dualidad de diseñador integral, el área del diseño de productos ha sido bastante relevante, desde siempre me ha gustado el saber como se hacen las cosas y eso me lleva a querer hacerlas",
+  "Tengo experiencia con la carpintería en muchas de sus formas, la soldadura al arco y el trabajo de metales, el laminado en plásticos reforzados, moldeado de resina epóxica, masilla mágica, diversas formas de acabados, y el trabajo de biomateriales."
   ],
   "image": [
     "img/5/0.JPG",
@@ -75,12 +82,11 @@
   ]
 },
 {
-  "title": "Modelado 3D",
+  "title": "Proyectos 3D",
   "year": "2017-2023",
   "text": [
-  "Para poder",
-  "Para poder desarrollar mis proyectos propios he necesitado fabricar mis propios espacios de trabajo. Motivado por querer revivir la experiencia que tenían los animadores de antaño construí mi escritorio de animación, y necesitado de un espacio para la carpintería fabriqué un meson de trabajo que me ayude con esta actividad.",
-  "Para poder desarrollar mis proyectos propios he necesitado fabricar mis propios espacios de trabajo. Motivado por querer revivir la experiencia que tenían los animadores de antaño construí mi escritorio de animación, y necesitado de un espacio para la carpintería fabriqué un meson de trabajo que me ayude con esta actividad."
+  "Modelado, texturizado, rigging y renderizado.",
+  "Entre los proyectos de animación, diseno de videojuegos, diseño de productos, o proyectos de ocio personal, he practicado el crear modelos 3d preparados para su uso en videojuegos o ser renderizados y parecer productos reales; desde productos para proyectos universitarios a personajes para mis proyectos propios, en ellos pongo mi cariño y esfuerzo."
   ],
   "image": [
     "img/6/0.JPG",
