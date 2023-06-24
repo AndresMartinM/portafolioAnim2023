@@ -34,49 +34,49 @@
   ],
   "image": [
     "img/2/0.JPG",
-    "img/2/1.jpg",
-    "img/2/2.jpg"
+    "img/2/1.JPG",
+    "img/2/2.JPG"
   ]
 },
 {
-  "title": "Proyectos Electrónicos",
+  "title": "Animación y Cine",
   "year": "2022-2023",
   "text": [
   "Desde siempre me ha interesado la electrónica e informática, y en el año 2022 tuve la oportunidad de desarrollar junto a Valentina Quilodrán un instrumento digital usando el adafruit circuit playground. Actualmente continuo con proyectos de electrónica usando arduino, para ellos combino la impresión 3d, la ebanistería y la electrónica."
   ],
   "image": [
     "img/3/0.JPG",
-    "img/1/1.jpg",
-    "img/1/2.jpg"
+    "img/3/1.JPG",
+    "img/3/2.JPG"
   ]
 },
 {
-  "title": "Moviliario Técnico",
+  "title": "Juegos y Videojuegos",
   "year": "2021-2023",
   "text": [
   "Para poder desarrollar mis proyectos propios he necesitado fabricar mis propios espacios de trabajo. Motivado por querer revivir la experiencia que tenían los animadores de antaño construí mi escritorio de animación, y necesitado de un espacio para la carpintería fabriqué un meson de trabajo que me ayude con esta actividad."
   ],
   "image": [
     "img/4/0.JPG",
-    "img/2/1.jpg",
-    "img/2/2.jpg"
+    "img/4/1.JPG",
+    "img/4/2.JPG"
   ]
 },
 {
-  "title": "Proyectos Electrónicos",
-  "year": "2022-2023",
+  "title": "Experiencia en Materiales",
+  "year": "siempre",
   "text": [
   "Desde siempre me ha interesado la electrónica e informática, y en el año 2022 tuve la oportunidad de desarrollar junto a Valentina Quilodrán un instrumento digital usando el adafruit circuit playground. Actualmente continuo con proyectos de electrónica usando arduino, para ellos combino la impresión 3d, la ebanistería y la electrónica."
   ],
   "image": [
     "img/5/0.JPG",
-    "img/1/1.jpg",
-    "img/1/2.jpg"
+    "img/5/1.JPG",
+    "img/5/2.JPG"
   ]
 },
 {
-  "title": "Moviliario Técnico",
-  "year": "2021-2023",
+  "title": "Modelado 3D",
+  "year": "2017-2023",
   "text": [
   "Para poder",
   "Para poder desarrollar mis proyectos propios he necesitado fabricar mis propios espacios de trabajo. Motivado por querer revivir la experiencia que tenían los animadores de antaño construí mi escritorio de animación, y necesitado de un espacio para la carpintería fabriqué un meson de trabajo que me ayude con esta actividad.",
@@ -84,8 +84,8 @@
   ],
   "image": [
     "img/6/0.JPG",
-    "img/2/1.jpg",
-    "img/2/2.jpg"
+    "img/6/1.JPG",
+    "img/6/2.JPG"
   ]
 }
 ]
