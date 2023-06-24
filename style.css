@@ -133,7 +133,11 @@ main {
 .tarjeta-perfil .foto .presentacion {
 	padding : 20px;
 	position : absolute;
-	bottom : 0;
+	bottom : -40px;
+	text-shadow: 0px 0px 5px var(--cafeclaro);
+}
+.tarjeta-perfil .foto .presentacion h1 {
+	color : var(--amarillo);
 }
 
 .tarjeta-perfil{
@@ -159,10 +163,16 @@ main {
 .enlaces a {
 	display : inline-block;
 	height : 4rem;
-	padding : 1rem;
+	padding : 1rem 0;
 	text-align : center;
 	width : 100%;
 	border-radius : var(--borde);
+	transition : width 0.4s, padding 0.6s, margin 0.4s;
+}
+.enlaces a:hover {
+	width : 90%;
+	padding : 0.75rem 0;
+	margin : 0 5%;
 }
 
 .tarjeta {
@@ -184,7 +194,7 @@ main {
 .tarjeta-perfil .sombra{
 	mask: linear-gradient(to top, white, transparent);
 	background : var(--cafe);
-	height : 40%;
+	height : 33%;
 	width : 100%;
 	position : absolute;
 	bottom : 0;
