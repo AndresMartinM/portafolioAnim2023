@@ -103,11 +103,12 @@ main {
 
 .articulo small {
 	font-style: italic;
-	color : var(--cafe);
-	background : var(--amarillo);
+	color : var(--amarillo);
+	background : var(--cafe);
 	height : auto;
 	padding : 0.25rem 0.6rem;
 	border-radius : 50vh;
+	border : 1px solid var(--amarillo);
 }
 #texto {
 	padding : 1rem;
