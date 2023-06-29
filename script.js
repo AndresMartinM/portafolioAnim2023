@@ -1,4 +1,7 @@
 async function articulo() {
+	
+	var colores = [ "rojo", "azul", "celeste", "verde"];
+	
 	var n = new URLSearchParams(window.location.search).get("nro");
 	n = Number(n);
 	const consulta = await fetch("https://raw.githubusercontent.com/AndresMartinM/portafolioAnim2023/main/works.json");
@@ -10,6 +13,22 @@ async function articulo() {
     data[n].image.forEach((x) => {
 		document.querySelector("#fotos").innerHTML += '<img src="' + x + '" width="600px" class="w-100" alt="imagen del proyecto">'
     });
+	
+	var color = getRandomInt(colores.length);
+	
+	if (n == 1){
+		document.querySelector("#texto").innerHTML += '<div class="enlaces col-4"><a class="' + colores[color] + '" href="https://github.com/AndresMartinM" target="_blank" aria-label="Enlace a GitHub">GitHub</a></div>'
+	}
+	if (n == 4){
+		document.querySelector("#texto").innerHTML += '<div class="enlaces col-4"><a class="' + colores[color] + '" href="https://andresmartin.itch.io/" target="_blank" aria-label="Enlace a itch.io">itch.io</a></div>'
+	}
+	if (n == 6){
+		document.querySelector("#texto").innerHTML += '<div class="enlaces col-4"><a class="' + colores[color] + '" href="https://sketchfab.com/andergenio" target="_blank" aria-label="Enlace a Sketchfab">Sketchfab</a></div>'
+	}
+}
+
+function getRandomInt(max) {
+  return Math.floor(Math.random() * max);
 }
 
 async function tarjetasm() {
