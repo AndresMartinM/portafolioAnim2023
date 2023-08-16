@@ -19,6 +19,9 @@ async function articulo() {
 	if (n == 1){
 		document.querySelector("#texto").innerHTML += '<div class="enlaces col-4"><a class="' + colores[color] + '" href="https://github.com/AndresMartinM" target="_blank" aria-label="Enlace a GitHub">GitHub</a></div>'
 	}
+	if (n == 3){
+		document.querySelector("#texto").innerHTML += '<div class="enlaces col-4"><a class="' + colores[color] + '" href="https://www.youtube.com/watch?v=4RZLKAtOIvI" target="_blank" aria-label="Enlace a Video">Video</a></div>'
+	}
 	if (n == 4){
 		document.querySelector("#texto").innerHTML += '<div class="enlaces col-4"><a class="' + colores[color] + '" href="https://andresmartin.itch.io/" target="_blank" aria-label="Enlace a itch.io">itch.io</a></div>'
 	}
